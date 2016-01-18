@@ -1,0 +1,1 @@
+http://www.raymondcamden.com/2016/01/11/going-from-static-to-dynamic-with-ionic-creator
