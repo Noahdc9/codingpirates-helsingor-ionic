@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+<style>
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    body {
+    background-color: #eee;
+    }
+    .loading {
+    margin: 10% auto;
+    border-bottom: 6px solid #fff;
+    border-left: 6px solid #fff;
+    border-right: 6px solid #c30;
+    border-top: 6px solid #c30;
+    border-radius: 100%;
+    height: 125px;
+    width: 125px;
+    -webkit-animation: spin .6s infinite linear;
+    -moz-animation: spin .6s infinite linear;
+    -ms-animation: spin .6s infinite linear;
+    -o-animation: spin .6s infinite linear;
+    animation: spin .6s infinite linear;
+    }
+
+    @keyframes "spin" {
+    from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+    to {
+    -webkit-transform: rotate(359deg);
+    -moz-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+    }
+
+    }
+
+    @-moz-keyframes spin {
+    from {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+    to {
+    -moz-transform: rotate(359deg);
+    transform: rotate(359deg);
+    }
+
+    }
+
+    @-webkit-keyframes "spin" {
+    from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+    to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+    }
+
+    }
+
+    @-ms-keyframes "spin" {
+    from {
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+    to {
+    -ms-transform: rotate(359deg);
+    transform: rotate(359deg);
+    }
+
+    }
+
+    @-o-keyframes "spin" {
+    from {
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    }
+    to {
+    -o-transform: rotate(359deg);
+    transform: rotate(359deg);
+    }
+
+    }
+</style>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/directives.js"></script>
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+    <div>
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-back-button class="button-icon icon ion-ios-arrow-back">Back</ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view></ion-nav-view>
+    </div>
+</div>
+  </body>
+</html>
